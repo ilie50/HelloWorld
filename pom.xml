@@ -57,15 +57,17 @@
 					<source>1.7</source>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.wildfly.plugins</groupId>
-				<artifactId>wildfly-maven-plugin</artifactId>
-				<version>1.0.1.Final</version>
-				<configuration>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>1.0.1.Final</version>
+                <configuration>
+					<hostname>172.0.0.1</hostname>
+					<port>10990</port>
 					<username>admin</username>
 					<password>admin</password>
 				</configuration>
-			</plugin>
+            </plugin>
 		</plugins>
 	</build>
 </project>
